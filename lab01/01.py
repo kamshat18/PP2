@@ -1,3 +1,4 @@
+#lab01
 print("Hello, World!")#example from home-get started
 #PYTHON COMMENTS
 #This is a comment.
@@ -27,8 +28,8 @@ def myfunc():
 
 myfunc() #Global variables
 #PYTHON DATA TYPES
-x = {"name" : "John", "age" : 36}	#dict
-x = ("apple", "banana", "cherry")	#tuple
+x = {"name" : "John", "age" : 36} #dict
+x = ("apple", "banana", "cherry") #tuple
 x = 20.5	#float etc
 #PYTHON CASTING
 x = int(1)   # x will be 1
