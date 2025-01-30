@@ -71,6 +71,39 @@ print(p.show())
 
 distance = p.dist(7, 4)
 print(f"Расстояние до точки (7,4): {distance:}")  
+
+#CLASS TASK 5
+class Bank:
+    def __init__(self,owner,balance=0):
+        self.owner=owner
+        self.balance=balance
+    def deposit(self,amount):
+        if amount>0:
+            self.balance+=amount
+            print(f"Popolnen na {amount}")
+            
+        else:
+            print("Ne dobavleno,vnesite cash")
+    def withdrawal(self ,amount): 
+        if amount>self.balance :
+             print("Nehvatka sredstv")
+            
+        elif amount> self.balance:
+            self.balance-=amount
+            print(f"Spisalos': {amount}")
+           
+    def dostup(self,balance):
+        print(f"Dostupno:{self.balance}")
+
+acc = Bank("Kamshat", 1200)
+print(acc)
+acc.deposit(0)
+acc.withdrawal(1600)
+acc.dostup("")
+print(acc)
+
+
+
  
     
     
