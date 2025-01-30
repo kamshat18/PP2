@@ -31,5 +31,49 @@ square = Square(int(input()))
 
 print(shape.area())
 print(square.area())  
-
        
+#class task 3
+
+class Shape:
+    def __init__(self ,lenght=0):
+        self.lenght=lenght    
+    def area(self):
+        return self.lenght*self.lenght
+class Rectangle(Shape):
+    def __init__(self, lenght,width):
+        self.width = width
+        return super().__init__(lenght)
+    def area(self): 
+        return f"Area of triangle = {self.lenght*self.width}"
+shape = Shape() 
+triangle = Rectangle(5,7)
+print(shape.area())
+print(triangle.area())
+ 
+#CLASS TASK4
+import math
+class Point:
+    def __init__(self,x,y):  
+        self.x= x
+        self.y=y
+    def show(self):
+         return f"Point({self.x}, {self.y})"
+    def move(self,dx,dy):
+        self.x += dx
+        self.y += dy
+    def dist(self, x, y):
+        return math.sqrt((self.x - x) ** 2 + (self.y - y) ** 2)
+p = Point(3, 4)   
+print(p.show())   
+
+p.move(2, -1)     
+print(p.show()) 
+
+distance = p.dist(7, 4)
+print(f"Расстояние до точки (7,4): {distance:}")  
+ 
+    
+    
+    
+
+
