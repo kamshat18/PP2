@@ -1,4 +1,4 @@
-#class task 1
+#CLASS TASK 1
 class Stringwork:
     def __init__(self):
         self.text=""
@@ -10,7 +10,7 @@ term =Stringwork()
 term.getstring()
 term.printstring()
 
-#class task 2
+#CLASS TASK 2
 
 class Shape:
     def __init__(self, length=0): 
@@ -32,7 +32,7 @@ square = Square(int(input()))
 print(shape.area())
 print(square.area())  
        
-#class task 3
+#CLASS TASK 3
 
 class Shape:
     def __init__(self ,lenght=0):
@@ -50,7 +50,7 @@ triangle = Rectangle(5,7)
 print(shape.area())
 print(triangle.area())
  
-#CLASS TASK4
+#CLASS TASK 4
 import math
 class Point:
     def __init__(self,x,y):  
