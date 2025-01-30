@@ -102,6 +102,30 @@ acc.withdrawal(1600)
 acc.dostup("")
 print(acc)
 
+#CLASS TASK 6
+
+class Check:
+    def __init__(self , num):
+
+        self.num=num
+    def is_prime(self):
+
+        if self.num > 1:
+            for i in range(2, (self.num//2)+1):
+                if (self.num % i) == 0:
+                    print(self.num, "is not a prime number")
+                    return
+                
+        print(self.num, "is a prime number")
+number = Check(2)  
+number.is_prime()
+
+number2 = Check(15)
+number2.is_prime()
+
+number3 = Check(17)
+number3.is_prime()
+
 
 
  
