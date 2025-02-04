@@ -42,7 +42,7 @@ class Shape:
 class Rectangle(Shape):
     def __init__(self, lenght,width):
         self.width = width
-        return super().__init__(lenght)
+        super().__init__(lenght)
     def area(self): 
         return f"Area of triangle = {self.lenght*self.width}"
 shape = Shape() 
