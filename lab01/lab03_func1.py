@@ -24,11 +24,11 @@ print(f"Kroliki: {result[0]}, Kurici: {result[1]}")
 
 #task 4 func
 def filter_prime(lst):
-    primes = []  # Создаем пустой список для простых чисел
+    primes = [] 
     for num in lst:  
-        if num > 1:  # Простые числа начинаются с 2
+        if num > 1:  
             is_prime = True  
-            for i in range(2, int(num ** 0.5) + 1):  # Проверка делителей до sqrt(num)
+            for i in range(2, int(num ** 0.5) + 1):  
                 if num % i == 0:
                     is_prime = False
                     break
