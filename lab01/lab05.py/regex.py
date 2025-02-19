@@ -43,3 +43,13 @@ test=["bac","a1b","ab_ba","a_b"]
 for x in test:
     print(m(x))
 """
+
+#TASK 6
+"""
+import re
+txt = "The rain. in ,Spain ;  "
+x = re.sub(r"[ .,]", ":", txt)
+print(x)"""
+
+#TASK 7
+
