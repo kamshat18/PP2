@@ -1,4 +1,4 @@
-from my_func import gramms, celcius,rever
+from lab01.lab03.my_func import gramms, celcius,rever
 vvod = input("Vvod stroki:")
 result = rever(vvod)
 print(result)
