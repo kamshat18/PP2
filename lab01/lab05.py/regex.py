@@ -48,8 +48,6 @@ for x in test:
 
 
 #TASK 6
-
-import re
 txt = "The rain. in ,Spain ;"
 x = re.sub(r"[ .,]", ":", txt)
 print(x)
@@ -66,7 +64,6 @@ print(camel_string)
 
 
 #TASK 8
-import re
 text = "stringStr"
 pattern = r"([a-z])([A-Z])"
 result = re.sub(pattern,r"\1 \2", text)
@@ -77,7 +74,7 @@ print(re.split(r'(?=[A-Z])', "strString"))
 
 #TASK 9
 
-import re
+
 s = "HelloWorld"
 spaced = re.sub(r'(?<!^)(?=[A-Z])', ' ', s)
 print(spaced)
@@ -86,7 +83,7 @@ print(spaced)
 #TASK 10
 
 
-import re
+
 s = "camelCase"
 snake_case = re.sub(r'(?<!^)(?=[A-Z])', '_', s).lower()
 print(snake_case)
