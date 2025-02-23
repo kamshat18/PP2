@@ -21,7 +21,7 @@ for x in test:
 #TASK 3
 def Match(s):
     pattern = r'[a-z]+_[a-z]'
-    return re.search(pattern,s):
+    return re.search(pattern,s)
 test=["bac","ab","ab_ba","a_b"]
 for x in test:
     print(Match(x))
@@ -50,7 +50,7 @@ for x in test:
 #TASK 6
 
 import re
-txt = "The rain. in ,Spain ;  
+txt = "The rain. in ,Spain ;"
 x = re.sub(r"[ .,]", ":", txt)
 print(x)
 
