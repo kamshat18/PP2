@@ -1,4 +1,13 @@
-#TASK 1
+# Write a Python program to subtract five days from current date.
+
+# Write a Python program to print yesterday, today, tomorrow.
+
+# Write a Python program to drop microseconds from datetime.
+
+# Write a Python program to calculate two date difference in seconds.
+
+
+ #TASK 1
 from datetime import datetime , timedelta
 today = datetime.now() 
 substract_days= timedelta(days=5)

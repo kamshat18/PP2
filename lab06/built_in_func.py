@@ -1,3 +1,7 @@
+# Write a Python program with builtin function to multiply all the numbers in a list
+# Write a Python program with builtin function that accepts a string and calculate the number of upper case letters and lower case letters
+# Write a Python program with builtin function that checks whether a passed string is palindrome or not.
+# Write a Python program that invoke square root function after specific milliseconds.
 #TASK1
 from functools import reduce
 def multiply(s):

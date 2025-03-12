@@ -2,7 +2,7 @@ import json
 
 with open("sample-data.json", "r") as file:
     data = json.load(file)
-\
+
 print("Interface Status")
 print("=" * 80)
 print("{:<50} {:<20} {:<10} {:<10}".format("DN", "Description", "Speed", "MTU"))
