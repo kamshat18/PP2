@@ -3,7 +3,6 @@ import sys
 
 pygame.init()
 
-# Constants
 WIDTH, HEIGHT = 800, 600  # размеры экрана
 WHITE = (255, 255, 255)  # белый
 BLACK = (0, 0, 0)  # черный
@@ -14,12 +13,11 @@ COLORS = [BLACK, RED, GREEN, BLUE, WHITE]  # список цветов
 COLOR_NAMES = ["Black", "Red", "Green", "Blue", "Eraser"]  # имена цветов
 BUTTON_SIZE = 50  # размер кнопок
 
-# Инициализация экрана
+
 screen = pygame.display.set_mode((WIDTH, HEIGHT))  # создаем экран
 pygame.display.set_caption("Smooth Drawing Tool")  # заголовок окна
 screen.fill(WHITE)  # заполняем экран белым цветом
 
-# Переменные
 current_color = BLACK  # начальный цвет
 drawing = False  # рисуем ли
 mode = "pen"  # начальный режим — ручка
@@ -31,7 +29,6 @@ buttons = []
 for i, color in enumerate(COLORS):
     buttons.append(pygame.Rect(10 + i * (BUTTON_SIZE + 10), HEIGHT - 60, BUTTON_SIZE, BUTTON_SIZE))  # размещаем кнопки для цветов
 
-# Функция отрисовки кнопок
 def draw_ui():
     for i, button in enumerate(buttons):
         pygame.draw.rect(screen, COLORS[i], button)  # рисуем кнопки
@@ -40,14 +37,13 @@ def draw_ui():
         if COLORS[i] == current_color:  # если это выбранный цвет, рисуем рамку
             pygame.draw.rect(screen, WHITE, button, 3)
 
-# Получаем цвет по позиции кнопки
 def get_color_from_pos(pos):
     for i, button in enumerate(buttons):
         if button.collidepoint(pos):  # проверка, была ли нажата кнопка
             return COLORS[i]  # возвращаем выбранный цвет
     return None
 
-# Рисуем плавную линию между точками
+
 def draw_smooth_line(screen, points, width, color):
     if len(points) < 2:  # если точек меньше 2, нечего рисовать
         return
@@ -64,7 +60,6 @@ def draw_smooth_line(screen, points, width, color):
             y = int(aprogress * start[1] + progress * end[1])  # вычисляем координаты Y
             pygame.draw.circle(screen, color, (x, y), width)  # рисуем точку
 
-# Основной цикл
 running = True
 clock = pygame.time.Clock()
 while running:
